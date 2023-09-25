@@ -1,0 +1,26 @@
+package com.bettrnation.model;
+
+public record GameInfo(
+    Integer scoreId,
+    Integer season,
+    Integer seasonType,
+    Integer week,
+    String day,
+    String dateTime,
+    String status,
+    Integer awayTeamId,
+    Integer homeTeamId,
+    String awayTeamName,
+    String homeTeamName,
+    Integer globalGameId,
+    Integer globalAwayTeamId,
+    Integer globalHomeTeamId,
+    List<GameOdd> pregameOdds,
+    List<GameOdd> liveOdds,
+    Integer homeTeamScore,
+    Integer awayTeamScore,
+    Integer totalScore,
+    Integer homeRotationNumber,
+    Integer awayRotationNumber,
+    List<GameOdd> alternateMarketPregameOdds,
+    Integer gameId) {}
