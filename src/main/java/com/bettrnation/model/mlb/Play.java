@@ -1,0 +1,43 @@
+package com.bettrnation.model.mlb;
+
+import com.google.gson.annotations.SerializedName;
+import java.util.List;
+
+public record Play(
+    @SerializedName("PlayID") Integer playID,
+    @SerializedName("InningID") Integer inningID,
+    @SerializedName("InningNumber") Integer inningNumber,
+    @SerializedName("InningHalf") String inningHalf,
+    @SerializedName("PlayNumber") Integer playNumber,
+    @SerializedName("InningBatterNumber") Integer inningBatterNumber,
+    @SerializedName("AwayTeamRuns") Integer awayTeamRuns,
+    @SerializedName("HomeTeamRuns") Integer homeTeamRuns,
+    @SerializedName("HitterID") Integer hitterID,
+    @SerializedName("PitcherID") Integer pitcherID,
+    @SerializedName("HitterTeamID") Integer hitterTeamID,
+    @SerializedName("PitcherTeamID") Integer pitcherTeamID,
+    @SerializedName("HitterName") String hitterName,
+    @SerializedName("PitcherName") String pitcherName,
+    @SerializedName("PitcherThrowHand") String pitcherThrowHand,
+    @SerializedName("HitterBatHand") String hitterBatHand,
+    @SerializedName("HitterPosition") String hitterPosition,
+    @SerializedName("Outs") Integer outs,
+    @SerializedName("Balls") Integer balls,
+    @SerializedName("Strikes") Integer strikes,
+    @SerializedName("PitchNumberThisAtBat") Integer pitchNumberThisAtBat,
+    @SerializedName("Result") String result,
+    @SerializedName("NumberOfOutsOnPlay") Integer numberOfOutsOnPlay,
+    @SerializedName("RunsBattedIn") Integer runsBattedIn,
+    @SerializedName("AtBat") Boolean atBat,
+    @SerializedName("Strikeout") Boolean strikeout,
+    @SerializedName("Walk") Boolean walk,
+    @SerializedName("Hit") Boolean hit,
+    @SerializedName("Out") Boolean out,
+    @SerializedName("Sacrifice") Boolean sacrifice,
+    @SerializedName("Error") Boolean error,
+    @SerializedName("Updated") String updated,
+    @SerializedName("Description") String description,
+    @SerializedName("Pitches") List<Pitch> pitches,
+    @SerializedName("Runner1ID") Integer runner1ID,
+    @SerializedName("Runner2ID") Integer runner2ID,
+    @SerializedName("Runner3ID") Integer runner3ID) {}

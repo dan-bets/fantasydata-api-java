@@ -1,13 +1,13 @@
 package com.bettrnation.model;
 
-import java.time.LocalDateTime;
+import com.google.gson.annotations.SerializedName;
 
 public record DepthChart(
-    Integer depthChartID,
-    Integer teamID,
-    Integer playerID,
-    String name,
-    String positionCategory,
-    String position,
-    Integer depthOrder,
-    LocalDateTime updated) {}
+    @SerializedName("DepthChartID") Integer depthChartID,
+    @SerializedName("TeamID") Integer teamID,
+    @SerializedName("PlayerID") Integer playerID,
+    @SerializedName("Name") String name,
+    @SerializedName("PositionCategory") String positionCategory,
+    @SerializedName("Position") String position,
+    @SerializedName("DepthOrder") Integer depthOrder,
+    @SerializedName("Updated") String updated) {}

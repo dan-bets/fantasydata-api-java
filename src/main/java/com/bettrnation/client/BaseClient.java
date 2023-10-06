@@ -18,12 +18,12 @@ import java.util.concurrent.CompletableFuture;
 
 public abstract class BaseClient {
   private static final String API_KEY_HEADER = "Ocp-Apim-Subscription-Key";
-  private String host;
-  private String apiKey;
-  private boolean https;
-  private String encoding;
-  private HttpClient client = HttpClient.newHttpClient();
-  private UncheckedObjectMapper uncheckedObjectMapper = new UncheckedObjectMapper();
+  private final String host;
+  private final String apiKey;
+  private final boolean https;
+  private final String encoding;
+  private final HttpClient client = HttpClient.newHttpClient();
+  private final UncheckedObjectMapper uncheckedObjectMapper = new UncheckedObjectMapper();
 
   private String scheme() {
     return https ? "https:" : "http";
